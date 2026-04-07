@@ -1,26 +1,18 @@
-# gx-exchange-rust-sdk
+# GX Exchange Rust SDK
 
-SDK for GX Exchange API trading with Rust.
+Official Rust SDK for interacting with the GX Exchange API. Provides a performant, type-safe interface for programmatic trading and market data access on the GX Chain network.
 
-## Usage Examples
+## Overview
 
-See `src/bin` for examples. You can run any example with `cargo run --bin [EXAMPLE]`.
+- Native Rust client for the GX Exchange REST and WebSocket APIs
+- High-performance order execution and account management
+- Type-safe request and response structures
+- Suitable for low-latency trading systems and backend services
 
-## Installation
+## Requirements
 
-`cargo add gx-exchange_rust_sdk`
+- Rust toolchain (stable)
 
 ## License
 
-This project is licensed under the terms of the `MIT` license. See [LICENSE](LICENSE.md) for more details.
-
-```bibtex
-@misc{gx-exchange-rust-sdk,
-  author = {GX Exchange},
-  title = {SDK for GX Exchange API trading with Rust.},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/GX-EXCHANGE/gx-exchange-rust-sdk}}
-}
-```
+MIT
