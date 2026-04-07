@@ -21,4 +21,4 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 OR OTHER DEALINGS IN THE SOFTWARE.
 
 ---
-Originally forked from Hyperliquid (https://github.com/hyperliquid-dex)
+Originally forked from hyperliquid-dex (open-source reference), fully rewritten for GX Exchange.
