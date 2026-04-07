@@ -75,7 +75,7 @@ pub enum Subscription {
 #[serde(rename_all = "camelCase")]
 pub enum Message {
     NoData,
-    GX ExchangeError(String),
+    ExchangeError(String),
     AllMids(AllMids),
     Trades(Trades),
     L2Book(L2Book),
@@ -295,7 +295,7 @@ impl WsManager {
             .map_err(|e| Error::JsonParse(e.to_string())),
             Message::SubscriptionResponse | Message::Pong => Ok(String::default()),
             Message::NoData => Ok("".to_string()),
-            Message::GX ExchangeError(err) => Ok(format!("gx-exchange error: {err:?}")),
+            Message::ExchangeError(err) => Ok(format!("gx-exchange error: {err:?}")),
         }
     }
 
@@ -335,7 +335,7 @@ impl WsManager {
                     let error = Error::ReaderTextConversion(err.to_string());
                     Ok(WsManager::send_to_all_subscriptions(
                         subscriptions,
-                        Message::GX ExchangeError(error.to_string()),
+                        Message::ExchangeError(error.to_string()),
                     )
                     .await?)
                 }
@@ -344,7 +344,7 @@ impl WsManager {
                 let error = Error::GenericReader(err.to_string());
                 Ok(WsManager::send_to_all_subscriptions(
                     subscriptions,
-                    Message::GX ExchangeError(error.to_string()),
+                    Message::ExchangeError(error.to_string()),
                 )
                 .await?)
             }
