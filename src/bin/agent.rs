@@ -1,5 +1,5 @@
 use alloy::signers::local::PrivateKeySigner;
-use gx_rust_sdk::{BaseUrl, ClientLimit, ClientOrder, ClientOrderRequest, ExchangeClient};
+use gx_exchange_sdk::{BaseUrl, ClientLimit, ClientOrder, ClientOrderRequest, ExchangeClient};
 use log::info;
 
 #[tokio::main]

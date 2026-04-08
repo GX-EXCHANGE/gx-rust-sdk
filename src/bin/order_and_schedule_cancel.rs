@@ -1,7 +1,7 @@
 use alloy::signers::local::PrivateKeySigner;
 use log::info;
 
-use gx_rust_sdk::{
+use gx_exchange_sdk::{
     BaseUrl, ClientLimit, ClientOrder, ClientOrderRequest, ExchangeClient, ExchangeDataStatus,
     ExchangeResponseStatus,
 };

@@ -1,7 +1,7 @@
 use std::{thread::sleep, time::Duration};
 
 use alloy::signers::local::PrivateKeySigner;
-use gx_rust_sdk::{
+use gx_exchange_sdk::{
     BaseUrl, BuilderInfo, ClientCancelRequest, ClientLimit, ClientOrder, ClientOrderRequest,
     ExchangeClient, ExchangeDataStatus, ExchangeResponseStatus,
 };

@@ -1,13 +1,16 @@
 [package]
-name = "gx_rust_sdk"
+name = "gx-exchange-sdk"
 version = "0.6.0"
 edition = "2021"
 license = "MIT"
-description = "Rust SDK for GX Exchange"
+authors = ["GX Exchange Labs <engineering@gx.exchange>"]
+description = "Official Rust SDK for GX Exchange — typed REST + WebSocket clients for trading on GX Chain"
 homepage = "https://gx.exchange/"
 readme = "README.md"
-documentation = "https://github.com/GX-EXCHANGE/gx-rust-sdk"
+documentation = "https://docs.rs/gx-exchange-sdk"
 repository = "https://github.com/GX-EXCHANGE/gx-rust-sdk"
+keywords = ["gx-exchange", "trading", "crypto", "sdk", "defi"]
+categories = ["api-bindings", "cryptography::cryptocurrencies"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

@@ -9,7 +9,7 @@ The Rust SDK gives low-latency trading systems native access to GX Chain's match
 ## Quick Start
 
 ```bash
-cargo add gx_rust_sdk
+cargo add gx-exchange-sdk
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ cargo add gx_rust_sdk
 ### Initialize and Place an Order
 
 ```rust
-use gx_rust_sdk::{ExchangeClient, InfoClient, MAINNET_API_URL};
+use gx_exchange_sdk::{ExchangeClient, InfoClient, MAINNET_API_URL};
 
 let info = InfoClient::new(None, Some(MAINNET_API_URL)).await?;
 let exchange = ExchangeClient::new(None, wallet, Some(MAINNET_API_URL), None, None).await?;

@@ -1,5 +1,5 @@
 use alloy::primitives::address;
-use gx_rust_sdk::{BaseUrl, InfoClient, Message, Subscription};
+use gx_exchange_sdk::{BaseUrl, InfoClient, Message, Subscription};
 use log::info;
 use tokio::{
     spawn,

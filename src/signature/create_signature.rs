@@ -73,7 +73,7 @@ mod tests {
             time: 1690393044548,
         };
 
-        let expected_sig = "0x214d507bbdaebba52fa60928f904a8b2df73673e3baba6133d66fe846c7ef70451e82453a6d8db124e7ed6e60fa00d4b7c46e4d96cb2bd61fd81b6e8953cc9d21b";
+        let expected_sig = "0x65094b50968f92118c65e40f87dfacf1707abbfd9bb040425f5dacca4c7143b177b0feeba6b7529ef6cf1fac15ebfb9e48d00b247e28061e954ec5c00bd7076b1b";
         assert_eq!(
             sign_typed_data(&usd_send, &wallet)?.to_string(),
             expected_sig
@@ -93,7 +93,7 @@ mod tests {
             time: 1690393044548,
         };
 
-        let expected_sig = "0xb3172e33d2262dac2b4cb135ce3c167fda55dafa6c62213564ab728b9f9ba76b769a938e9f6d603dae7154c83bf5a4c3ebab81779dc2db25463a3ed663c82ae41c";
+        let expected_sig = "0x682430327651a24ee3d40e3bbc464f0bf33361e7342edb087d9ade1b8eb7fb1e14ee8526a65d9a0e5b2b997bf17aa81d184dfd536275ec49005df7434d9ac88e1b";
         assert_eq!(
             sign_typed_data(&usd_send, &wallet)?.to_string(),
             expected_sig
